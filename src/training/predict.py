@@ -104,7 +104,7 @@ def main():
     model=load_model_wrapper(args)
 
 
-    test_generator = initializers.initialize_generators(args, mode="test", parameters=None, return_coords=True)
+    test_generator = initializers.initialize_generators(args, mode="all", parameters=None, return_coords=True)
     true_counts, profile_probs_predictions, true_counts_sum, counts_sum_predictions, coordinates = predict_on_batch_wrapper(model, test_generator)
 
 

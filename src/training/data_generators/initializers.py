@@ -30,7 +30,7 @@ def fetch_data_and_model_params_based_on_mode(mode, args, parameters, nonpeak_re
         # no need to shuffle
         shuffle_at_epoch_start=False
 
-    elif mode=="test":
+    elif mode=="test" or mode=="all":
         # read input/output length
         inputlen=args.inputlen
         outputlen=args.outputlen
