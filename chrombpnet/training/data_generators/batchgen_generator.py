@@ -64,7 +64,7 @@ class ChromBPNetBatchGenerator(keras.utils.Sequence):
             cropped_peaks, cropped_cnts, cropped_coords = augment.random_crop(self.peak_seqs, self.peak_cts, self.inputlen, self.outputlen, self.peak_coords)
             #print(cropped_peaks.shape)
             #print(self.nonpeak_seqs.shape)
-            if self.negative_sampling_ratio < 1.0:
+            if self.negative_sampling_ratio <= 1.0:
                 self.sampled_nonpeak_seqs, self.sampled_nonpeak_cts, self.sampled_nonpeak_coords = subsample_nonpeak_data(self.nonpeak_seqs, self.nonpeak_cts, self.nonpeak_coords, len(self.peak_seqs), self.negative_sampling_ratio)
                 self.seqs = np.vstack([cropped_peaks, self.sampled_nonpeak_seqs])
                 self.cts = np.vstack([cropped_cnts, self.sampled_nonpeak_cts])

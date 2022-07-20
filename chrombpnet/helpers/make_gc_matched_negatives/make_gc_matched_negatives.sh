@@ -13,9 +13,8 @@ inputlen=${3?param missing - inputlen}
 output_dir=${4?param missing - output_dir}
 genome=${5?param missing - genome}
 genomewide_gc=${6?param missing - genomewide_gc}
-fold=${7?param missing - fold}
-chrom_sizes=${8?param missing - chrom_sizes}
-logfile=${9}
+chrom_sizes=${7?param missing - chrom_sizes}
+logfile=${8}
 
 function timestamp {
     # Function to get the current time with the new line character
@@ -57,13 +56,11 @@ echo $( timestamp ): "chrombpnet_gc_matched_negatives \\
         --candidate_negatives $output_dir/candidate.negatives.bed \\
         --foreground_gc_bed $output_dir/foreground.gc.bed \\
         --output_prefix $output_dir/negatives \\
-        --chr_fold_path $fold \\
         --neg_to_pos_ratio_train 2" | tee -a $logfile
 chrombpnet_gc_matched_negatives \
     --candidate_negatives $output_dir/candidate.negatives.bed \
     --foreground_gc_bed $output_dir/foreground.gc.bed \
     --output_prefix $output_dir/negatives \
-    --chr_fold_path $fold \
     --neg_to_pos_ratio_train 2 | tee -a $logfile
 
 

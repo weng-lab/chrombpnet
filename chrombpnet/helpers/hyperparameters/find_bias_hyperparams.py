@@ -17,6 +17,7 @@ def parse_data_args():
     parser.add_argument("-oth", "--outlier_threshold", type=float, default=0.9999, help="threshold to use to filter outlies")
     parser.add_argument("-j", "--max_jitter", type=int, default=50, help="Maximum jitter applied on either side of region (default 500 for chrombpnet model)")
     parser.add_argument("-fl", "--chr_fold_path", type=str, required=True, help="Fold information - dictionary with test,valid and train keys and values with corresponding chromosomes")
+    parser.add_argument("-fo", "--fold", type=str, required=True, help="Cross validation to use")
     return parser
 
 def parse_model_args(parser):
@@ -36,11 +37,12 @@ def main():
 
     # read the fold information - we will evaluate hyperparams and filter outliers on the train+valid set 
     # do nothing on the test set 
-    splits_dict=json.load(open(args.chr_fold_path))
-    chroms_to_keep=splits_dict["train"]+splits_dict["valid"]
-    test_chroms_to_keep=splits_dict["test"]
-    print("evaluating hyperparameters on the following chromosomes",chroms_to_keep)
+    splits_df = pd.read_csv(args.chr_fold_path, sep='\t')
+    splits_dict = {'train': [], 'valid': [], 'test': []}
 
+    for index,row in splits_df.iterrows():
+        splits_dict[row['fold' + args.fold]].append((row['chr'], row['pos']))
+    
     # read from bigwigs and fasta file
     bw = pyBigWig.open(args.bigwig) 
     genome = pyfaidx.Fasta(args.genome)
@@ -60,12 +62,51 @@ def main():
     assert(args.inputlen >= args.outputlen) # inputlen should be greater than the outputlen 
                                             # inputlen and outlen are chosen based on the filters and dilations layers used
 
-    # get train/valid peaks and test peaks seperately
-    peaks = in_peaks[(in_peaks["chr"].isin(chroms_to_keep))]
-    test_peaks = in_peaks[(in_peaks["chr"].isin(test_chroms_to_keep))]
+    coords_to_keep=splits_dict["train"]+splits_dict["valid"]
+    test_coords_to_keep=splits_dict["test"]
 
-    nonpeaks = in_nonpeaks[(in_nonpeaks["chr"].isin(chroms_to_keep))]
-    test_nonpeaks = in_nonpeaks[(in_nonpeaks["chr"].isin(test_chroms_to_keep))]
+    # get train/valid peaks and test peaks seperately
+
+    keep_peaks = []
+    test_keep_peaks = []
+    keep_nonpeaks = []
+    test_keep_nonpeaks = []
+
+    for index,row in in_peaks.iterrows():
+        if (row['chr'], row['start'] + row['summit']) in coords_to_keep:
+            keep_peaks.append(True)
+        else:
+            keep_peaks.append(False)
+    in_peaks['keep'] = keep_peaks
+    peaks=in_peaks.loc[in_peaks['keep']].copy()
+    peaks.drop(columns=['keep'], inplace=True)
+
+    for index,row in in_peaks.iterrows():
+        if (row['chr'], row['start'] + row['summit']) in test_coords_to_keep:
+            test_keep_peaks.append(True)
+        else:
+            test_keep_peaks.append(False)
+    in_peaks['test_keep'] = test_keep_peaks
+    test_peaks=in_peaks.loc[in_peaks['test_keep']].copy()
+    test_peaks.drop(columns=['keep', 'test_keep'], inplace=True)
+
+    for index,row in in_nonpeaks.iterrows():
+        if (row['chr'], row['start'] + row['summit']) in coords_to_keep:
+            keep_nonpeaks.append(True)
+        else:
+            keep_nonpeaks.append(False)
+    in_nonpeaks['keep'] = keep_nonpeaks
+    nonpeaks=in_nonpeaks.loc[in_nonpeaks['keep']].copy()
+    nonpeaks.drop(columns=['keep'], inplace=True)
+
+    for index,row in in_nonpeaks.iterrows():
+        if (row['chr'], row['start'] + row['summit']) in test_coords_to_keep:
+            test_keep_nonpeaks.append(True)
+        else:
+            test_keep_nonpeaks.append(False)
+    in_nonpeaks['test_keep'] = test_keep_nonpeaks
+    test_nonpeaks=in_nonpeaks.loc[in_nonpeaks['test_keep']].copy()
+    test_nonpeaks.drop(columns=['keep', 'test_keep'], inplace=True)
 
     # step 1 filtering: filter nonpeaks that are in the edges - prevents us from making the inputlen regions - do this for all train/test/valid   
     nonpeaks = param_utils.filter_edge_regions(nonpeaks, bw, args.inputlen, peaks_bool=0)

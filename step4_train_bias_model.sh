@@ -15,13 +15,14 @@ reference_fasta=${1?param missing - reference_fasta}
 bigwig_path=${2?param missing - bigwig_path}
 overlap_peak=${3?param missing - overlap_peak}
 nonpeaks=${4?param missing - nonpeaks}
-fold=${5?param missing - fold}
-bias_threshold_factor=${6?param missing - bias_threshold_factor}
-output_dir=${7?param missing - output_dir}
-filters=${8:-128}
-n_dilation_layers=${9:-4}
-seed=${10:-1234}
-logfile=${11}
+fold_path=${5?param missing - fold_path}
+fold=${6?param missing - fold}
+bias_threshold_factor=${7?param missing - bias_threshold_factor}
+output_dir=${8?param missing - output_dir}
+filters=${9:-128}
+n_dilation_layers=${10:-4}
+seed=${11:-1234}
+logfile=${12}
 
 # defaults
 inputlen=2114
@@ -55,6 +56,7 @@ echo $( timestamp ): "chrombpnet_bias_hyperparams \\
        --nonpeaks=$nonpeaks \\
        --outlier_threshold=0.99 \\
        --chr_fold_path=$fold \\
+       --fold=$fold \\
        --inputlen=$inputlen \\
        --outputlen=$outputlen \\
        --max_jitter=0 \\
@@ -70,6 +72,7 @@ chrombpnet_bias_hyperparams \
     --nonpeaks=$nonpeaks \
     --outlier_threshold=0.99 \
     --chr_fold_path=$fold \
+    --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \
     --max_jitter=0 \
@@ -89,6 +92,7 @@ echo $( timestamp ): "chrombpnet_train \\
        --params=$output_dir/bias_model_params.tsv \\
        --output_prefix=$output_dir/bias \\
        --chr_fold_path=$fold \\
+       --fold=$fold \\
        --seed=$seed \\
        --batch_size=64 \\
        --architecture_from_file=$bpnet_model_path \\
@@ -101,6 +105,7 @@ chrombpnet_train \
     --params=$output_dir/bias_model_params.tsv \
     --output_prefix=$output_dir/bias \
     --chr_fold_path=$fold \
+    --fold=$fold \
     --seed=$seed \
     --batch_size=64 \
     --architecture_from_file=$bpnet_model_path \
@@ -112,6 +117,7 @@ echo $( timestamp ): "chrombpnet_predict \\
         --bigwig=$bigwig_path \\  
         --nonpeaks=$output_dir/filtered.bias_nonpeaks.bed \\
         --chr_fold_path=$fold \\
+        --fold=$fold \\
         --inputlen=$inputlen \\
         --outputlen=$outputlen \\
         --output_prefix=$output_dir/bias \\
@@ -123,6 +129,7 @@ chrombpnet_predict \
     --bigwig=$bigwig_path \
     --nonpeaks=$output_dir/filtered.bias_nonpeaks.bed \
     --chr_fold_path=$fold \
+    --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \
     --output_prefix=$output_dir/bias \

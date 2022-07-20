@@ -1,0 +1,360 @@
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c6.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c4.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c11.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c9.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c7.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/foreground.gc \
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c10.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/foreground.gc \
+        --inputlen 2114
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c13.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c0.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c1.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c0.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c7.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c4.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/foreground.gc \
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c3.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c2.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c2.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c5.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c5.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c3.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/tdt.c6.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/foreground.gc \
+        --inputlen 2114
+2022-07-20_09-46-02: get gc content of the positive sequences
+2022-07-20_09-46-02: chrombpnet_gc_content_foreground \
+        --input_bed /oak/stanford/groups/akundaje/projects/cad/outs/6_28_2022_new_clusters/peaks/formatted/no_tdt.c1.peaks.formatted.bed \
+        --genome /oak/stanford/groups/akundaje/refs/mm10/GRCm38.p4.genome.fa \
+        --chrom_sizes /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/make_background_regions.log \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/foreground.gc \
+        --inputlen 2114
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/candidate.negatives.bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/candidate.negatives.bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/candidate.negatives.bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/candidate.negatives.bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/candidate.negatives.bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/candidate.negatives.bed
+2022-07-20_09-46-06: get candidate negative bed
+2022-07-20_09-46-06: bedtools intersect -v -a /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/genomewide_gc_mm10_stride_3000_inputlen_2114.bed -b /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/exclude.bed  > /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/candidate.negatives.bed
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c7/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c1/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c9/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c2/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c4/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c0/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c11/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c10/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+2022-07-20_09-46-19: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c2/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-20: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-20: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c5/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-20: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-20: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c6/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-20: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-20: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c1/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-21: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-21: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c4/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-21: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-21: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c6/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-21: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-21: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c5/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-21: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-21: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c13/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+2022-07-20_09-46-23: find regions in candidate negative bed that gc-match wth foreground
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+2022-07-20_09-46-23: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c3/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-23: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-23: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c0/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+2022-07-20_09-46-23: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-23: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/no_tdt.c3/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+2022-07-20_09-46-23: find regions in candidate negative bed that gc-match wth foreground
+2022-07-20_09-46-23: chrombpnet_gc_matched_negatives \
+        --candidate_negatives /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/candidate.negatives.bed \
+        --foreground_gc_bed /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/foreground.gc.bed \
+        --output_prefix /oak/stanford/groups/akundaje/projects/cad/outs/7_20_2022_balanced_folds/gc_matched_negatives/tdt.c7/negatives \
+        --chr_fold_path /oak/stanford/groups/akundaje/refs/mm10/mm10.male.chrom.sizes \
+        --neg_to_pos_ratio_train 2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2
+WARNING: IF upgrading from v1.0 or v1.1 to v1.2, note that chrombpnet has undergone linting to generate a modular structure for release on pypi.Hard-coded script paths are no longer necessary. Please refer to the updated README to ensure your script calls are compatible with v1.2

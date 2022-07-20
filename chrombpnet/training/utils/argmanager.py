@@ -7,6 +7,7 @@ def update_data_args(parser):
     parser.add_argument("-n", "--nonpeaks", type=str, default="None" ,help="10 column bed file of non-peak regions, centered at summit (10th column)")
     parser.add_argument("-o", "--output_prefix", type=str, required=True, help="Output prefix")
     parser.add_argument("-fl", "--chr_fold_path", type=str, required=True, help="Fold information - see splits.py to set folds")
+    parser.add_argument("-fo", "--fold", type=str, required=True, help="Cross validation to use")
     parser.add_argument("--trackables",nargs="*",default=['loss','val_loss'], help="list of things to track per batch, such as logcount_predictions_loss,loss,profile_predictions_loss,val_logcount_predictions_loss,val_loss,val_profile_predictions_loss")
 
 

@@ -39,6 +39,7 @@ def fetch_footprinting_args():
     parser.add_argument("-g", "--genome", type=str, required=True, help="Genome fasta")
     parser.add_argument("-r", "--regions", type=str, required=True, help="10 column bed file of peaks. Sequences and labels will be extracted centered at start (2nd col) + summit (10th col).")
     parser.add_argument("-fl", "--chr_fold_path", type=str, required=True, help="Path to file containing chromosome splits; we will only use the test chromosomes")
+    parser.add_argument("-fo", "--fold", type=str, required=True, help="Cross validation to use")
     parser.add_argument("-m", "--model_h5", type=str, required=True, help="Path to trained model, can be both bias or chrombpnet model")
     parser.add_argument("-bs", "--batch_size", type=int, default="64", help="input batch size for the model")
     parser.add_argument("-o", "--output_prefix", type=str, required=True, help="Output prefix")
@@ -96,11 +97,26 @@ def main():
     print("inferred model inputlen: ", inputlen)
     print("inferred model outputlen: ", outputlen)
 
-    splits_dict = json.load(open(args.chr_fold_path))
-    chroms_to_keep = set(splits_dict["test"])
+    splits_df = pd.read_csv(args.chr_fold_path, sep='\t')
+    splits_dict = {'train': [], 'valid': [], 'test': []}
 
+    for index,row in splits_df.iterrows():
+        splits_dict[row['fold' + args.fold]].append((row['chr'], row['pos']))
+    
     regions_df = pd.read_csv(args.regions, sep='\t', names=NARROWPEAK_SCHEMA)
-    regions_subsample = regions_df[(regions_df["chr"].isin(chroms_to_keep))]
+
+    coords_to_keep=splits_dict["test"]
+    keep_peaks = []
+
+    for index,row in regions_df.iterrows():
+        if (row['chr'], row['start'] + row['summit']) in coords_to_keep:
+            keep_peaks.append(True)
+        else:
+            keep_peaks.append(False)
+    regions_df['keep'] = keep_peaks
+    regions_subsample=regions_df.loc[regions_df['keep']].copy()
+    regions_subsample.drop(columns=['keep'], inplace=True)
+
     regions_seqs = get_seq(regions_subsample, genome_fasta, inputlen)
 
     footprints_at_motifs = {}

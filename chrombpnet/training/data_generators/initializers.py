@@ -50,10 +50,18 @@ def fetch_data_and_model_params_based_on_mode(mode, args, parameters, nonpeak_re
 
 
 def get_bed_regions_for_fold_split(bed_regions, mode, splits_dict):
-    chroms_to_keep=splits_dict[mode]
-    bed_regions_to_keep=bed_regions[bed_regions["chr"].isin(chroms_to_keep)]
+    coords_to_keep=splits_dict[mode]
+    keep = []
+    for index,row in bed_regions.iterrows():
+        if (row['chr'], row['start'] + row['summit']) in coords_to_keep:
+            keep.append(True)
+        else:
+            keep.append(False)
+    bed_regions['keep'] = keep
+    bed_regions_to_keep=bed_regions.loc[bed_regions['keep']].copy()
+    bed_regions_to_keep.drop(columns=['keep'], inplace=True)
     print("got split:"+str(mode)+" for bed regions:"+str(bed_regions_to_keep.shape))
-    return bed_regions_to_keep, chroms_to_keep
+    return bed_regions_to_keep
 
 def initialize_generators(args, mode, parameters, return_coords):
 
@@ -62,17 +70,22 @@ def initialize_generators(args, mode, parameters, return_coords):
     nonpeak_regions=None
 
     # get only those peak/non peak regions corresponding to train/valid/test set
-    splits_dict=json.load(open(args.chr_fold_path))
+    #splits_dict=json.load(open(args.chr_fold_path))
+    splits_df = pd.read_csv(args.chr_fold_path, sep='\t')
+    splits_dict = {'train': [], 'valid': [], 'test': []}
+
+    for index,row in splits_df.iterrows():
+        splits_dict[row['fold' + args.fold]].append((row['chr'], row['pos']))
 
     if args.peaks.lower() != "none":
         print("loading peaks...")
         peak_regions=pd.read_csv(args.peaks,header=None,sep='\t',names=NARROWPEAK_SCHEMA)
-        peak_regions, chroms=get_bed_regions_for_fold_split(peak_regions, mode, splits_dict)
+        peak_regions=get_bed_regions_for_fold_split(peak_regions, mode, splits_dict)
 
     if args.nonpeaks.lower() != "none":
         print("loading nonpeaks...")
         nonpeak_regions=pd.read_csv(args.nonpeaks,header=None,sep='\t',names=NARROWPEAK_SCHEMA)
-        nonpeak_regions, chroms=get_bed_regions_for_fold_split(nonpeak_regions, mode, splits_dict) 
+        nonpeak_regions=get_bed_regions_for_fold_split(nonpeak_regions, mode, splits_dict) 
 
     inputlen, outputlen, \
     nonpeak_regions, negative_sampling_ratio, \

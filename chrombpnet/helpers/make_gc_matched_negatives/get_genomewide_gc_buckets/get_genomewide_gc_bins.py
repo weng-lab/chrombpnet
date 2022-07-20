@@ -4,12 +4,13 @@ import argparse
 def parse_args():
     parser=argparse.ArgumentParser(description="get gc content after binning the entire genome into bins")
     parser.add_argument("-g","--genome", required=True, help="reference genome file")
+    parser.add_argument("-cz","--chrom_sizes",type=str, required=True, help="TSV file with chromosome name in first column and size in the second column")
     parser.add_argument("-o","--output_prefix", required=True, help="output BED file prefix to store the gc content of binned genome. suffix .bed will be appended by the code. If the prefix contains a directory path make sure it exists.")
     parser.add_argument("-f","--inputlen", type=int,default=2114, help="inputlen to use to find gc content")
     parser.add_argument("-s","--stride", type=int,default=1000, help="stride to use for shifting the bins")
     return parser.parse_args()
 
-def get_genomewide_gc(genome_fa, outf, width, stride):
+def get_genomewide_gc(genome_fa, outf, width, stride, chrom_sizes):
     """
     Get GC fraction in bins of width "width" strided by "stride".
 
@@ -30,6 +31,8 @@ def get_genomewide_gc(genome_fa, outf, width, stride):
     f = pyfaidx.Fasta(genome_fa, as_raw=True)
     outf = open(outf, 'w')
 
+    chrom_sizes_dict = {line.strip().split("\t")[0]:int(line.strip().split("\t")[1]) for line in open(chrom_sizes).readlines()}
+
     div = width//stride
     rem = width%stride
     stride_x_div = div * stride
@@ -38,7 +41,7 @@ def get_genomewide_gc(genome_fa, outf, width, stride):
     # div bins of length stride each
     cache = [0]*div
 
-    for chrm in f.keys():
+    for chrm in chrom_sizes_dict.keys():
         s = f[chrm][:].upper()
 
         runsum = 0
@@ -71,7 +74,7 @@ def get_genomewide_gc(genome_fa, outf, width, stride):
     
 def main():
     args = parse_args()
-    get_genomewide_gc(args.genome, args.output_prefix+".bed", args.inputlen, args.stride)
+    get_genomewide_gc(args.genome, args.output_prefix+".bed", args.inputlen, args.stride, args.chrom_sizes)
 
     
 if __name__=="__main__":
