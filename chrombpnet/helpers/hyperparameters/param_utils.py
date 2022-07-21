@@ -26,6 +26,7 @@ def filter_edge_regions(peaks_df, bw, width, peaks_bool):
         else:
             filtered.append(False)
     filtered=np.array(filtered)
+
     peaks_df = peaks_df[~filtered]
     num_filtered += sum(filtered)
 

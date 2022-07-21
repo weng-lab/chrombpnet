@@ -55,7 +55,7 @@ echo $( timestamp ): "chrombpnet_bias_hyperparams \\
        --peaks=$overlap_peak \\
        --nonpeaks=$nonpeaks \\
        --outlier_threshold=0.99 \\
-       --chr_fold_path=$fold \\
+       --chr_fold_path=$fold_path \\
        --fold=$fold \\
        --inputlen=$inputlen \\
        --outputlen=$outputlen \\
@@ -71,7 +71,7 @@ chrombpnet_bias_hyperparams \
     --peaks=$overlap_peak \
     --nonpeaks=$nonpeaks \
     --outlier_threshold=0.99 \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \
@@ -91,7 +91,7 @@ echo $( timestamp ): "chrombpnet_train \\
        --nonpeaks=$output_dir/filtered.bias_nonpeaks.bed \\
        --params=$output_dir/bias_model_params.tsv \\
        --output_prefix=$output_dir/bias \\
-       --chr_fold_path=$fold \\
+       --chr_fold_path=$fold_path \\
        --fold=$fold \\
        --seed=$seed \\
        --batch_size=64 \\
@@ -104,7 +104,7 @@ chrombpnet_train \
     --nonpeaks=$output_dir/filtered.bias_nonpeaks.bed \
     --params=$output_dir/bias_model_params.tsv \
     --output_prefix=$output_dir/bias \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --seed=$seed \
     --batch_size=64 \
@@ -116,7 +116,7 @@ echo $( timestamp ): "chrombpnet_predict \\
         --genome=$reference_fasta \\	 
         --bigwig=$bigwig_path \\  
         --nonpeaks=$output_dir/filtered.bias_nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         --inputlen=$inputlen \\
         --outputlen=$outputlen \\
@@ -128,7 +128,7 @@ chrombpnet_predict \
     --genome=$reference_fasta \
     --bigwig=$bigwig_path \
     --nonpeaks=$output_dir/filtered.bias_nonpeaks.bed \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \

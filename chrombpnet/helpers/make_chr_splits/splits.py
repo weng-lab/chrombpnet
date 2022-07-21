@@ -30,37 +30,50 @@ def main():
                                                                                                         args.inputlen, args.outputlen,
                                                                                                         args.max_jitter)
     peak_cts = np.sum(peak_cts, axis=1)
+    nonpeak_cts = np.sum(nonpeak_cts, axis=1)
+
     print(peak_cts.shape)
     print(peak_coords.shape)
+
+    print(nonpeak_cts.shape)
+    print(nonpeak_coords.shape)
     
     peak_cts = peak_cts.tolist()
-    chroms = peak_coords[:,0].tolist()
-    pos = peak_coords[:,1].tolist()
+    peak_chroms = peak_coords[:,0].tolist()
+    peak_pos = peak_coords[:,1].tolist()
+
+    nonpeak_cts = nonpeak_cts.tolist()
+    nonpeak_chroms = nonpeak_coords[:,0].tolist()
+    nonpeak_pos = nonpeak_coords[:,1].tolist()
+
+    all_cts = peak_cts + nonpeak_cts
+    all_chroms = peak_chroms + nonpeak_chroms
+    all_pos = peak_pos + nonpeak_pos
 
     print("Creating Splits")
 
-    peak_df = pd.DataFrame({'chr': chroms, 'pos': pos, 'cts': peak_cts})
-    peak_df.sort_values(by='cts', inplace=True)
+    all_df = pd.DataFrame({'chr': all_chroms, 'pos': all_pos, 'cts': all_cts})
+    all_df.sort_values(by='cts', inplace=True)
 
-    peak_dict = {'fold0': [], 'fold1': [], 'fold2': [], 'fold3': [], 'fold4': []}
+    all_dict = {'fold0': [], 'fold1': [], 'fold2': [], 'fold3': [], 'fold4': []}
 
-    for index,row in peak_df.iterrows():
+    for index,row in all_df.iterrows():
         if index % 10000 == 0:
             print(index)
         test_or_valid = random.choice(['valid', 'test'])
         test_or_valid_fold = random.choice(range(5))
         for fold in range(5):
             if fold != test_or_valid_fold:
-                peak_dict['fold' + str(fold)].append('train')
+                all_dict['fold' + str(fold)].append('train')
             else:
-                peak_dict['fold' + str(fold)].append(test_or_valid)
+                all_dict['fold' + str(fold)].append(test_or_valid)
 
     for fold in range(5):
-        peak_df['fold' + str(fold)] = peak_dict['fold' + str(fold)]
+        all_df['fold' + str(fold)] = all_dict['fold' + str(fold)]
 
     print("Saving Splits")
 
-    peak_df.to_csv(args.output_prefix + '.splits.tsv', sep='\t')
+    all_df.to_csv(args.output_prefix + '.splits.tsv', sep='\t')
 
 if __name__=="__main__":
     main()

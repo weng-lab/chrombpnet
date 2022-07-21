@@ -58,7 +58,7 @@ echo $( timestamp ): "chrombpnet_hyperparams \\
        --peaks=$overlap_peak \\
        --nonpeaks=$nonpeaks \\
        --outlier_threshold=0.99 \\
-       --chr_fold_path=$fold \\
+       --chr_fold_path=$fold_path \\
        --fold=$fold \\
        --negative_sampling_ratio=$negative_sampling_ratio \\
        --inputlen=$inputlen \\
@@ -74,7 +74,7 @@ chrombpnet_hyperparams \
     --peaks=$overlap_peak \
     --nonpeaks=$nonpeaks \
     --outlier_threshold=0.99 \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --negative_sampling_ratio=$negative_sampling_ratio \
     --inputlen=$inputlen \
@@ -96,7 +96,7 @@ echo $( timestamp ): "chrombpnet_train \\
        --nonpeaks=$output_dir/filtered.nonpeaks.bed \\
        --params=$output_dir/chrombpnet_model_params.tsv \\
        --output_prefix=$output_dir/chrombpnet \\
-       --chr_fold_path=$fold \\
+       --chr_fold_path=$fold_path \\
        --fold=$fold \\
        --seed=$seed \\
        --batch_size=64 \\
@@ -110,7 +110,7 @@ chrombpnet_train \
     --nonpeaks=$output_dir/filtered.nonpeaks.bed \
     --params=$output_dir/chrombpnet_model_params.tsv \
     --output_prefix=$output_dir/chrombpnet \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --seed=$seed \
     --batch_size=64 \
@@ -123,7 +123,7 @@ echo $( timestamp ): "chrombpnet_predict \\
         --bigwig=$bigwig_path \\
         --peaks=$output_dir/filtered.peaks.bed \\
         --nonpeaks=$output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         --inputlen=$inputlen \\
         --outputlen=$outputlen \\
@@ -135,7 +135,7 @@ chrombpnet_predict \
     --bigwig=$bigwig_path \
     --peaks=$output_dir/filtered.peaks.bed \
     --nonpeaks=$output_dir/filtered.nonpeaks.bed \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \
@@ -149,7 +149,7 @@ echo $( timestamp ): "chrombpnet_predict \\
         --bigwig=$bigwig_path \\
         --peaks=$output_dir/filtered.peaks.bed \\
         --nonpeaks=$output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         --inputlen=$inputlen \\
         --outputlen=$outputlen \\
@@ -161,7 +161,7 @@ chrombpnet_predict \
     --bigwig=$bigwig_path \
     --peaks=$output_dir/filtered.peaks.bed \
     --nonpeaks=$output_dir/filtered.nonpeaks.bed \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \
@@ -175,7 +175,7 @@ echo $( timestamp ): "chrombpnet_predict \\
         --bigwig=$bigwig_path \\
         --peaks=$output_dir/filtered.peaks.bed \\
         --nonpeaks=$output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         --inputlen=$inputlen \\
         --outputlen=$outputlen \\
@@ -187,7 +187,7 @@ chrombpnet_predict \
     --bigwig=$bigwig_path \
     --peaks=$output_dir/filtered.peaks.bed \
     --nonpeaks=$output_dir/filtered.nonpeaks.bed \
-    --chr_fold_path=$fold \
+    --chr_fold_path=$fold_path \
     --fold=$fold \
     --inputlen=$inputlen \
     --outputlen=$outputlen \
@@ -209,7 +209,7 @@ if [[ "$data_type" = "DNASE_SE" || "$data_type" = "DNASE_PE" ]] ; then
         echo $( timestamp ): "chrombpnet_marginal_footprints \\
         -g $reference_fasta \\
         -r $output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         -m $output_dir/chrombpnet_wo_bias.h5 \\
         -bs 512 \\
@@ -219,7 +219,7 @@ if [[ "$data_type" = "DNASE_SE" || "$data_type" = "DNASE_PE" ]] ; then
         chrombpnet_marginal_footprints \
             -g $reference_fasta \
             -r $output_dir/filtered.nonpeaks.bed \
-            --chr_fold_path=$fold \
+            --chr_fold_path=$fold_path \
             --fold=$fold \
             -m $output_dir/chrombpnet_wo_bias.h5 \
             -bs 512 \
@@ -232,7 +232,7 @@ elif [[ "$data_type" = "ATAC_SE" || "$data_type" = "ATAC_PE"  ]] ; then
         echo $( timestamp ): "chrombpnet_marginal_footprints \\
         -g $reference_fasta \\				     
         -r $output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         -m $output_dir/chrombpnet_wo_bias.h5 \\
         -bs 512 \\
@@ -242,7 +242,7 @@ elif [[ "$data_type" = "ATAC_SE" || "$data_type" = "ATAC_PE"  ]] ; then
         chrombpnet_marginal_footprints \
             -g $reference_fasta \
             -r $output_dir/filtered.nonpeaks.bed \
-            --chr_fold_path=$fold \
+            --chr_fold_path=$fold_path \
             --fold=$fold \
             -m $output_dir/chrombpnet_wo_bias.h5 \
             -bs 512 \
@@ -260,7 +260,7 @@ if [[ "$data_type" = "DNASE_SE" || "$data_type" = "DNASE_PE" ]] ; then
         echo $( timestamp ): "chrombpnet_marginal_footprints \\
         -g $reference_fasta \\
         -r $output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         -m $output_dir/bias_model_scaled.h5 \\
         -bs 512 \\
@@ -270,7 +270,7 @@ if [[ "$data_type" = "DNASE_SE" || "$data_type" = "DNASE_PE" ]] ; then
         chrombpnet_marginal_footprints \
             -g $reference_fasta \
             -r $output_dir/filtered.nonpeaks.bed \
-            --chr_fold_path=$fold \
+            --chr_fold_path=$fold_path \
             --fold=$fold \
             -m $output_dir/bias_model_scaled.h5 \
             -bs 512 \
@@ -283,7 +283,7 @@ elif [[ "$data_type" = "ATAC_SE" || "$data_type" = "ATAC_PE"  ]] ; then
         echo $( timestamp ): "chrombpnet_marginal_footprints \\
         -g $reference_fasta \\
         -r $output_dir/filtered.nonpeaks.bed \\
-        --chr_fold_path=$fold \\
+        --chr_fold_path=$fold_path \\
         --fold=$fold \\
         -chr "chr1" \\
         -m $output_dir/bias_model_scaled.h5 \\
@@ -294,7 +294,7 @@ elif [[ "$data_type" = "ATAC_SE" || "$data_type" = "ATAC_PE"  ]] ; then
         chrombpnet_marginal_footprints \
             -g $reference_fasta \
             -r $output_dir/filtered.nonpeaks.bed \
-            --chr_fold_path=$fold \
+            --chr_fold_path=$fold_path \
             --fold=$fold \
             -m $output_dir/bias_model_scaled.h5 \
             -bs 512 \
